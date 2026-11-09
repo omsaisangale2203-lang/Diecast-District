@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0E0E0E">
+  <meta name="description" content="Check diecast rarity clues and compare asking prices with market evidence using DD Deal Check.">
+  <title>DD Deal Check | Diecast District</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="deal-check.css">
+  <script src="deal-check.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand brand-image" href="index.htm" aria-label="Diecast District home"><img src="images/diecast-district-logo.png" alt="Diecast District logo"></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.htm">Home</a><a href="index.htm#brands">Brands</a><a href="index.htm#learn">Learn</a><a href="index.htm#market">Market Watch</a><a href="index.htm#garage">My Garage</a>
+    </nav>
+    <a class="header-cta" href="index.htm#garage">My Collection ↗</a>
+  </header>
+
+  <main class="dd-deal-page">
+    <section class="dd-deal-hero">
+      <div>
+        <p class="dd-deal-eyebrow">DIECAST DISTRICT / COLLECTOR TOOLS</p>
+        <h1>Know the car.<br><span>Know the deal.</span></h1>
+        <p>Check rarity clues, research comparable listings and find out whether a diecast asking price looks reasonable.</p>
+        <a class="dd-deal-scroll" href="#deal-form">Start checking ↓</a>
+      </div>
+      <div class="dd-deal-hero-mark"><span>DD</span><small>DEAL CHECK</small></div>
+    </section>
+
+    <section class="dd-deal-panel" id="deal-form">
+      <div class="dd-deal-section-title"><p class="dd-deal-eyebrow">01 / IDENTIFY YOUR MODEL</p><h2>Tell us about the car.</h2><p>Upload a photo, enter the details, or do both. A photo helps with visual reference but does not automatically verify the exact variant.</p></div>
+      <form id="dealCheckForm" novalidate>
+        <div class="dd-deal-upload-grid">
+          <label class="dd-deal-upload" for="carPhoto">
+            <input id="carPhoto" type="file" accept="image/*">
+            <span class="dd-upload-icon">＋</span><strong>Upload car photo</strong><small>JPG, PNG or WEBP · optional</small>
+            <img id="photoPreview" alt="Selected diecast preview" hidden>
+            <span id="photoName" class="dd-photo-name">No photo selected</span>
+          </label>
+          <div class="dd-deal-upload-note"><strong>Photo tip</strong><p>Use a clear side or three-quarter view. If possible, include the base, packaging, model name or product code in another photo when checking a specific variant.</p><p class="dd-muted">The first version displays your photo locally; it does not send it to an image-recognition service.</p></div>
+        </div>
+
+        <div class="dd-deal-fields">
+          <label>Brand <input id="brand" list="brandOptions" placeholder="e.g. MINI GT" required></label>
+          <datalist id="brandOptions"><option>Hot Wheels</option><option>Matchbox</option><option>MINI GT</option><option>Tomica</option><option>Bburago</option><option>Majorette</option><option>Kaido House</option><option>Tarmac Works</option><option>INNO64</option><option>Pop Race</option><option>Para64</option><option>GreenLight</option><option>Auto World</option><option>M2 Machines</option><option>Kyosho</option><option>AUTOart</option><option>Solido</option><option>Minichamps</option><option>Maisto</option></datalist>
+          <label>Model / casting name <input id="model" placeholder="e.g. Nissan Skyline GT-R" required></label>
+          <label>Variant / edition <input id="variant" placeholder="e.g. R34 V-Spec, chase, convention edition"></label>
+          <label>Scale <select id="scale"><option value="1:64">1:64</option><option value="1:43">1:43</option><option value="1:24">1:24</option><option value="1:18">1:18</option><option value="other">Other / not sure</option></select></label>
+          <label>Condition <select id="condition"><option value="sealed">Sealed / carded</option><option value="loose">Loose, excellent</option><option value="played">Played / visible wear</option><option value="damaged">Damaged / incomplete</option></select></label>
+          <label>Seller's asking price (₹) <input id="askingPrice" type="number" min="0" step="1" placeholder="e.g. 850" required></label>
+          <label>Original MRP / retail price (₹) <input id="mrp" type="number" min="0" step="1" placeholder="Optional"></label>
+        </div>
+
+        <div class="dd-deal-divider"></div>
+        <div class="dd-deal-section-title compact"><p class="dd-deal-eyebrow">02 / MARKET EVIDENCE</p><h2>Compare like with like.</h2><p>Enter prices from similar models in the same variant and condition. Prefer completed sales over seller asking prices.</p></div>
+        <div class="dd-deal-fields dd-market-fields">
+          <label>Lowest comparable price (₹) <input id="lowPrice" type="number" min="0" step="1" placeholder="e.g. 700"></label>
+          <label>Highest comparable price (₹) <input id="highPrice" type="number" min="0" step="1" placeholder="e.g. 950"></label>
+          <label>Typical / median price (₹) <input id="typicalPrice" type="number" min="0" step="1" placeholder="e.g. 825"></label>
+          <label>Number of comparable listings / sales <input id="compCount" type="number" min="0" step="1" placeholder="e.g. 4"></label>
+          <label class="dd-full-field">Rarity evidence <select id="rarity"><option value="unknown">Not verified / not sure</option><option value="common">Regular release / widely available</option><option value="limited">Limited or special release (evidence found)</option><option value="chase">Chase / rare variant (evidence found)</option><option value="discontinued">Discontinued (evidence found)</option></select></label>
+        </div>
+        <div class="dd-deal-actions"><button type="submit" class="dd-deal-button">Check this deal ↗</button><button type="reset" class="dd-deal-reset">Clear form</button></div>
+        <p class="dd-deal-disclaimer">A rarity label is only as reliable as its evidence. Do not select limited, chase or discontinued unless you have verified it from a trustworthy source.</p>
+      </form>
+    </section>
+
+    <section class="dd-deal-results" id="dealResults" aria-live="polite" hidden>
+      <div class="dd-deal-result-top"><div><p class="dd-deal-eyebrow">03 / YOUR DEAL REPORT</p><h2 id="resultTitle">Deal Check report</h2></div><span id="verdictBadge" class="dd-verdict-badge">Awaiting check</span></div>
+      <p id="resultSummary" class="dd-result-summary"></p>
+      <div class="dd-result-grid">
+        <article><small>Asking price</small><strong id="outAsking">—</strong></article>
+        <article><small>Comparable range</small><strong id="outRange">—</strong></article>
+        <article><small>Difference vs typical</small><strong id="outDifference">—</strong></article>
+        <article><small>Rarity status entered</small><strong id="outRarity">—</strong></article>
+      </div>
+      <div class="dd-result-notes"><h3>What this means</h3><ul id="resultNotes"></ul></div>
+      <div class="dd-research-box"><h3>Research this exact model</h3><p>Open targeted searches and verify the exact casting, variant, scale and condition before deciding.</p><div id="researchLinks" class="dd-research-links"></div></div>
+      <p class="dd-confidence" id="confidenceNote"></p>
+    </section>
+
+    <section class="dd-deal-howto"><p class="dd-deal-eyebrow">COLLECTOR'S RULE</p><h2>Rare doesn't always mean valuable.</h2><p>A model can be limited but have low demand. A common casting can become desirable. Judge the deal using exact-variant comparisons, condition, demand and credible completed sales—not hype or one unusually high listing.</p><a href="index.htm#market">Read the Market Watch guide →</a></section>
+  </main>
+  <footer class="dd-deal-footer"><a href="index.htm">← Back to Diecast District</a><span>COLLECT • EXPLORE • LEARN • BELONG</span></footer>
+</body>
+</html>

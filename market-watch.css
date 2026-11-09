@@ -1,0 +1,508 @@
+/* =========================================================
+   DIECAST DISTRICT — MARKET WATCH
+   Scoped to #market so existing homepage styling is preserved.
+   ========================================================= */
+
+#market.dd-market {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+#market .dd-market-hero {
+  position: relative;
+  padding: clamp(34px, 6vw, 78px);
+  margin: 0 0 34px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 88% 15%, rgba(220, 0, 0, .22), transparent 32%),
+    linear-gradient(135deg, #171717 0%, #101010 55%, #1b0808 100%);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 18px;
+}
+
+#market .dd-market-hero::after {
+  content: "DD";
+  position: absolute;
+  right: 3%;
+  bottom: -24%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(150px, 28vw, 360px);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -.12em;
+  color: rgba(255,255,255,.025);
+  pointer-events: none;
+}
+
+#market .dd-market-hero > * { position: relative; z-index: 1; }
+
+#market .dd-market-kicker {
+  margin: 22px 0 10px;
+  color: #ff3434;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .22em;
+}
+
+#market .dd-market-hero h2 {
+  max-width: 900px;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(38px, 6.2vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -.055em;
+}
+
+#market .dd-market-hero h2 span,
+#market .dd-market-heading h3 span { color: #ed1717; }
+
+#market .dd-market-intro {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: #c4c4c4;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.8;
+}
+
+#market .dd-market-hero .hero-actions { margin-top: 30px; }
+
+#market .dd-market-promise {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 38px;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+#market .dd-market-promise i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ed1717;
+}
+
+#market .dd-market-nav-wrap {
+  padding: 24px;
+  margin-bottom: 70px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  background: #111;
+}
+
+#market .dd-market-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#market .dd-market-nav a {
+  display: inline-flex;
+  padding: 11px 14px;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 7px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+#market .dd-market-nav a:hover {
+  border-color: #ed1717;
+  color: #fff;
+  background: rgba(237,23,23,.1);
+}
+
+#market .dd-market-block {
+  padding: clamp(28px, 5vw, 58px) 0;
+  scroll-margin-top: 90px;
+}
+
+#market .dd-market-heading {
+  max-width: 820px;
+  margin-bottom: 30px;
+}
+
+#market .dd-market-heading h3 {
+  margin: 12px 0 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(32px, 4.5vw, 54px);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+#market .dd-market-heading > p:last-child {
+  max-width: 700px;
+  color: #aaa;
+  line-height: 1.8;
+}
+
+#market .dd-subheading { margin-top: 48px; margin-bottom: 20px; }
+#market .dd-subheading h4 { margin: 8px 0 0; font-size: clamp(22px, 3vw, 30px); }
+
+#market .dd-price-cards,
+#market .dd-scam-grid,
+#market .dd-after-grid,
+#market .dd-help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#market .dd-market-card,
+#market .dd-scam-card,
+#market .dd-after-grid article,
+#market .dd-help-card {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  background: linear-gradient(145deg, #171717, #101010);
+}
+
+#market .dd-card-index,
+#market .dd-after-grid article > span,
+#market .dd-help-tag {
+  display: block;
+  margin-bottom: 15px;
+  color: #f04444;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+#market .dd-market-card h4,
+#market .dd-scam-card h4,
+#market .dd-help-card h4 {
+  margin: 0 0 12px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+}
+
+#market .dd-market-card p,
+#market .dd-scam-card p,
+#market .dd-after-grid article p,
+#market .dd-help-card p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+#market .dd-market-card strong { color: #fff; }
+
+#market .dd-card-tip {
+  padding-top: 14px;
+  margin-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  color: #e0b5b5 !important;
+  font-size: 12px !important;
+}
+
+#market .dd-market-callout {
+  padding: 24px 26px;
+  margin-top: 22px;
+  border-left: 3px solid #ed1717;
+  border-radius: 0 10px 10px 0;
+  background: rgba(255,255,255,.045);
+}
+
+#market .dd-callout-label {
+  color: #ff4b4b;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .17em;
+}
+
+#market .dd-market-callout p {
+  margin: 10px 0;
+  color: #d0d0d0;
+  line-height: 1.8;
+}
+
+#market .dd-market-callout a,
+#market .dd-source-links a,
+#market .dd-help-card a {
+  color: #ff5555;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#market .dd-market-callout a:hover,
+#market .dd-source-links a:hover,
+#market .dd-help-card a:hover { text-decoration: underline; }
+
+#market .dd-example {
+  padding: clamp(20px, 4vw, 34px);
+  margin-top: 22px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  background: #141414;
+}
+
+#market .dd-example-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+#market .dd-example-head h4 { margin: 6px 0 0; font-size: 22px; }
+
+#market .dd-example-tag {
+  padding: 7px 9px;
+  border-radius: 4px;
+  background: rgba(237,23,23,.12);
+  color: #ff6969;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+#market .dd-price-example-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+#market .dd-price-example-grid > div {
+  padding: 20px;
+  border-radius: 8px;
+  background: #202020;
+}
+
+#market .dd-price-example-grid span,
+#market .dd-price-example-grid small { display: block; color: #aaa; font-size: 12px; }
+
+#market .dd-price-example-grid strong {
+  display: block;
+  margin: 8px 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+#market .dd-price-example-grid > div:last-child strong { color: #ff5555; }
+#market .dd-example-note { margin: 18px 0 0; color: #999; font-size: 12px; line-height: 1.7; }
+
+#market .dd-factor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+#market .dd-factor-grid > div {
+  padding: 19px;
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 9px;
+  background: #121212;
+}
+
+#market .dd-factor-grid b { font-size: 14px; }
+#market .dd-factor-grid p { margin: 7px 0 0; color: #999; font-size: 12px; line-height: 1.7; }
+
+#market .dd-market-dark {
+  padding: clamp(28px, 5vw, 58px);
+  margin: 34px 0;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #151515, #0d0d0d 70%, #1b0808);
+}
+
+#market .dd-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+#market .dd-explain-panel {
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  background: rgba(255,255,255,.035);
+}
+
+#market .dd-explain-panel h4 { margin: 4px 0 15px; font-size: 24px; }
+
+#market .dd-number-list {
+  display: grid;
+  gap: 18px;
+  padding-left: 22px;
+  margin: 20px 0 0;
+}
+
+#market .dd-number-list li { padding-left: 5px; color: #eee; }
+#market .dd-number-list li::marker { color: #ff4242; font-weight: 800; }
+#market .dd-number-list b, #market .dd-number-list span { display: block; }
+#market .dd-number-list span { margin-top: 4px; color: #999; font-size: 13px; line-height: 1.6; }
+
+#market .dd-warning-panel { border-color: rgba(237,23,23,.28); }
+#market .dd-check-list { display: grid; gap: 12px; padding-left: 19px; color: #ccc; font-size: 13px; line-height: 1.6; }
+#market .dd-check-list li::marker { color: #f04444; }
+#market .dd-small-note { margin-top: 20px; color: #888; font-size: 11px !important; }
+
+#market .dd-callout-red { background: rgba(237,23,23,.07); }
+
+#market .dd-scam-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+#market .dd-scam-number {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  margin-bottom: 18px;
+  border: 1px solid rgba(237,23,23,.5);
+  border-radius: 50%;
+  color: #ff5555;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#market .dd-scam-card h4 { font-size: 19px; }
+#market .dd-scam-card b,
+#market .dd-scam-card > span:last-child { display: block; }
+#market .dd-scam-card b { margin-top: 18px; color: #fff; font-size: 12px; }
+#market .dd-scam-card > span:last-child { margin-top: 5px; color: #999; font-size: 12px; line-height: 1.7; }
+
+#market .dd-authenticity-box {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 22px;
+  padding: 28px;
+  margin-top: 18px;
+  border-radius: 12px;
+  background: #171717;
+  border: 1px solid rgba(255,255,255,.1);
+}
+
+#market .dd-authenticity-box h4 { margin: 8px 0; font-size: 24px; }
+#market .dd-authenticity-box p { color: #aaa; font-size: 13px; line-height: 1.8; }
+#market .dd-authenticity-note { padding: 20px; border-radius: 8px; background: #222; }
+#market .dd-authenticity-note strong { color: #ff6262; }
+
+#market .dd-buying-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+#market .dd-buy-step {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 9px;
+  background: rgba(255,255,255,.035);
+}
+
+#market .dd-buy-step > span {
+  flex: 0 0 36px;
+  color: #ff4b4b;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+#market .dd-buy-step b { display: block; font-size: 14px; }
+#market .dd-buy-step p { margin: 6px 0 0; color: #999; font-size: 12px; line-height: 1.7; }
+
+#market .dd-checklist-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 22px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  background: #151515;
+}
+
+#market .dd-checklist-box label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ccc;
+  font-size: 13px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+#market .dd-checklist-box input { flex: 0 0 auto; margin-top: 3px; accent-color: #ed1717; }
+#market .dd-checklist-foot { grid-column: 1 / -1; margin: 5px 0 0; color: #777; font-size: 11px; }
+
+#market .dd-after-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+#market .dd-after-grid article h4 { margin: 0 0 8px; font-size: 17px; }
+
+#market .dd-market-help {
+  padding: clamp(28px, 5vw, 58px);
+  margin: 34px 0;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 16px;
+  background: #141414;
+}
+
+#market .dd-help-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+#market .dd-help-card { background: #1b1b1b; }
+#market .dd-help-number { display: block; margin: 5px 0 10px; color: #ff4141; font-family: "Space Grotesk", sans-serif; font-size: 35px; }
+#market .dd-help-card a { display: inline-block; margin-top: 8px; }
+#market .dd-help-disclaimer { margin: 20px 0 0; color: #888; font-size: 12px; line-height: 1.7; }
+
+#market .dd-market-faq-list { border-top: 1px solid rgba(255,255,255,.12); }
+#market .dd-market-faq-list details { padding: 19px 4px; border-bottom: 1px solid rgba(255,255,255,.12); }
+#market .dd-market-faq-list summary { position: relative; padding-right: 30px; color: #eee; font-size: 15px; font-weight: 700; cursor: pointer; list-style: none; }
+#market .dd-market-faq-list summary::-webkit-details-marker { display: none; }
+#market .dd-market-faq-list summary::after { content: "+"; position: absolute; right: 4px; top: -5px; color: #ff4545; font-size: 23px; }
+#market .dd-market-faq-list details[open] summary::after { content: "−"; }
+#market .dd-market-faq-list details p { max-width: 850px; margin: 14px 0 0; color: #aaa; font-size: 13px; line-height: 1.8; }
+
+#market .dd-market-sources {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 28px;
+  padding: 30px;
+  margin-top: 40px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  background: #101010;
+}
+
+#market .dd-market-sources h3 { margin: 8px 0; font-family: "Space Grotesk", sans-serif; font-size: 24px; }
+#market .dd-market-sources p:not(.eyebrow) { color: #999; font-size: 12px; line-height: 1.8; }
+#market .dd-source-links { display: grid; align-content: center; gap: 12px; }
+
+@media (max-width: 900px) {
+  #market .dd-price-cards,
+  #market .dd-scam-grid,
+  #market .dd-help-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #market .dd-after-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #market .dd-factor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  #market.dd-market { padding-bottom: 60px; }
+  #market .dd-market-hero { padding: 28px 22px; }
+  #market .dd-market-nav-wrap { padding: 18px; margin-bottom: 35px; }
+  #market .dd-price-cards,
+  #market .dd-scam-grid,
+  #market .dd-after-grid,
+  #market .dd-help-grid,
+  #market .dd-two-col,
+  #market .dd-authenticity-box,
+  #market .dd-buying-steps,
+  #market .dd-checklist-box,
+  #market .dd-market-sources { grid-template-columns: 1fr; }
+  #market .dd-factor-grid,
+  #market .dd-price-example-grid { grid-template-columns: 1fr; }
+  #market .dd-market-dark,
+  #market .dd-market-help { padding: 24px 18px; }
+  #market .dd-example-head { display: block; }
+  #market .dd-example-tag { display: inline-block; margin-top: 12px; }
+  #market .dd-market-sources { padding: 22px; }
+  #market .dd-checklist-foot { grid-column: auto; }
+}

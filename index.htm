@@ -1,0 +1,1553 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0E0E0E">
+  <meta name="description" content="Diecast District — discover diecast brands, learn about miniature cars, and build your personal collection.">
+
+  <title>Diecast District | Collect. Explore. Learn. Belong.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="images/diecast-district-logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="market-watch.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand brand-image" href="#home" aria-label="Diecast District home">
+      <img src="./images/diecast-district-logo.png" alt="Diecast District official logo">
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#brands">Brands</a>
+      <a href="#learn">Learn</a>
+      <a href="#market">Market Watch</a>
+      <a href="deal-check.html">Deal Check</a>
+      <a href="#garage">My Garage</a>
+    </nav>
+
+    <a class="header-cta" href="#garage">My Collection ↗</a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">THE DIECAST COLLECTOR'S DISTRICT</p>
+
+        <h1>Small Cars.<br><span>Big Passion.</span></h1>
+
+        <p class="hero-description">
+          Discover the miniature world. Explore legendary brands,
+          learn the collector's craft, and build a collection that's yours.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#brands">
+            Explore the District ↗
+          </a>
+
+          <a class="button button-secondary" href="#learn">
+            Start Collecting
+          </a>
+        </div>
+
+        <p class="hero-tagline">
+          COLLECT <span>•</span> EXPLORE <span>•</span>
+          LEARN <span>•</span> BELONG
+        </p>
+      </div>
+
+      <div class="hero-visual" aria-label="Diecast District official logo showcase">
+        <div class="visual-label">01 / THE COLLECTOR'S WORLD</div>
+
+        <img
+          class="visual-logo"
+          src="./images/diecast-district-logo.png"
+          alt="Diecast District official logo"
+        >
+
+        <p class="visual-caption">EVERY MODEL HAS A STORY.</p>
+      </div>
+    </section>
+
+    <!-- EXPLORE BRANDS -->
+    <section class="section brands-section" id="brands">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE MAKERS</p>
+          <h2>Explore Brands<span>.</span></h2>
+          <p class="section-description">
+            Discover the makers behind your favourite miniature machines.
+          </p>
+        </div>
+      </div>
+
+      <div class="brand-search">
+        <input
+          type="search"
+          id="brand-search"
+          placeholder="Search diecast brands..."
+          aria-label="Search diecast brands"
+        >
+      </div>
+
+      <div class="brand-grid" id="brand-grid">
+
+        <!-- 01 HOT WHEELS -->
+        <article class="brand-card" data-brand="Hot Wheels">
+          <div class="brand-card-art hotwheels-art">
+            <img src="images/brands/hotwheels.png" alt="Hot Wheels logo" class="brand-logo">
+            <small>01 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">COLLECTOR FAVOURITE</p>
+            <h3>Hot Wheels</h3>
+            <p>Bold designs, iconic castings, premium releases and a huge variety of miniature cars.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Hot Wheels">Explore collection ↗</button>
+            <a href="hot-wheels.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 02 MATCHBOX -->
+        <article class="brand-card" data-brand="Matchbox">
+          <div class="brand-card-art matchbox-art">
+            <img src="images/brands/matchbox.png" alt="Matchbox logo" class="brand-logo">
+            <small>02 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">REAL-WORLD DETAIL</p>
+            <h3>Matchbox</h3>
+            <p>Everyday vehicles, realistic details and classic miniature castings.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Matchbox">Explore collection ↗</button>
+            <a href="matchbox.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 03 MINI GT -->
+        <article class="brand-card" data-brand="Mini GT">
+          <div class="brand-card-art minigt-art">
+            <img src="images/brands/minigt.png" alt="Mini GT logo" class="brand-logo">
+            <small>03 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">PREMIUM DETAIL</p>
+            <h3>Mini GT</h3>
+            <p>Detailed miniature models inspired by performance cars and motorsport.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Mini GT">Explore collection ↗</button>
+            <a href="mini-gt.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 04 TOMICA -->
+        <article class="brand-card" data-brand="Tomica">
+          <div class="brand-card-art tomica-art">
+            <img src="images/brands/tomica.png" alt="Tomica logo" class="brand-logo">
+            <small>04 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">JAPANESE CLASSICS</p>
+            <h3>Tomica</h3>
+            <p>A well-known range of miniature vehicles with Japanese roots.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Tomica">Explore collection ↗</button>
+            <a href="tomica.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 05 BBURAGO -->
+        <article class="brand-card" data-brand="Bburago">
+          <div class="brand-card-art bburago-art">
+            <img src="images/brands/bburago.png" alt="Bburago logo" class="brand-logo">
+            <small>05 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">SCALE ICONS</p>
+            <h3>Bburago</h3>
+            <p>Scale models featuring famous road cars and racing machines.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Bburago">Explore collection ↗</button>
+            <a href="bburago.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 06 MAJORETTE -->
+        <article class="brand-card" data-brand="Majorette">
+          <div class="brand-card-art majorette-art">
+            <img src="images/brands/majorette.png" alt="Majorette logo" class="brand-logo">
+            <small>06 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">CITY &amp; STREET CARS</p>
+            <h3>Majorette</h3>
+            <p>Compact diecast vehicles, licensed models and fun everyday castings.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Majorette">Explore collection ↗</button>
+            <a href="majorette.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 07 KAIDO HOUSE -->
+        <article class="brand-card" data-brand="Kaido House">
+          <div class="brand-card-art kaido-art">
+            <img src="images/brands/kaido-house.png" alt="Kaido House logo" class="brand-logo">
+            <small>07 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">CUSTOM CULTURE</p>
+            <h3>Kaido House</h3>
+            <p>Distinctive Japanese-inspired custom designs and bold collector models.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Kaido House">Explore collection ↗</button>
+            <a href="kaido-house.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 08 TARMAC WORKS -->
+        <article class="brand-card" data-brand="Tarmac Works">
+          <div class="brand-card-art tarmac-art">
+            <img src="images/brands/tarmac-works.png" alt="Tarmac Works logo" class="brand-logo">
+            <small>08 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">MOTORSPORT DETAIL</p>
+            <h3>Tarmac Works</h3>
+            <p>Collector-focused models inspired by racing, tuning and modern car culture.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Tarmac Works">Explore collection ↗</button>
+            <a href="tarmac-works.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 09 INNO64 -->
+        <article class="brand-card" data-brand="INNO64">
+          <div class="brand-card-art inno64-art">
+            <img src="images/brands/inno64.png" alt="INNO64 logo" class="brand-logo">
+            <small>09 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">JAPANESE &amp; RACING</p>
+            <h3>INNO64</h3>
+            <p>Detailed scale models featuring iconic road cars and motorsport liveries.</p>
+            <button class="brand-explore" type="button" data-filter-brand="INNO64">Explore collection ↗</button>
+            <a href="inno64.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 10 POP RACE -->
+        <article class="brand-card" data-brand="Pop Race">
+          <div class="brand-card-art poprace-art">
+            <img src="images/brands/pop-race.png" alt="Pop Race logo" class="brand-logo">
+            <small>10 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">MODERN COLLECTIBLES</p>
+            <h3>Pop Race</h3>
+            <p>Modern collectible models with detailed finishes and varied automotive subjects.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Pop Race">Explore collection ↗</button>
+            <a href="pop-race.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 11 PARA64 -->
+        <article class="brand-card" data-brand="Para64">
+          <div class="brand-card-art para64-art">
+            <img src="images/brands/para64.png" alt="Para64 logo" class="brand-logo">
+            <small>11 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">MODERN ROAD CARS</p>
+            <h3>Para64</h3>
+            <p>Collector models covering contemporary road cars and distinctive variants.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Para64">Explore collection ↗</button>
+            <a href="para64.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 12 GREENLIGHT -->
+        <article class="brand-card" data-brand="GreenLight">
+          <div class="brand-card-art greenlight-art">
+            <img src="images/brands/greenlight.png" alt="GreenLight logo" class="brand-logo">
+            <small>12 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">AMERICAN ICONS</p>
+            <h3>GreenLight</h3>
+            <p>Licensed vehicles, movie cars, classic American models and themed releases.</p>
+            <button class="brand-explore" type="button" data-filter-brand="GreenLight">Explore collection ↗</button>
+            <a href="greenlight.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 13 AUTO WORLD -->
+        <article class="brand-card" data-brand="Auto World">
+          <div class="brand-card-art autoworld-art">
+            <img src="images/brands/auto-world.png" alt="Auto World logo" class="brand-logo">
+            <small>13 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">AMERICAN MUSCLE</p>
+            <h3>Auto World</h3>
+            <p>Detailed American classics, muscle cars and collector-focused releases.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Auto World">Explore collection ↗</button>
+            <a href="auto-world.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 14 M2 MACHINES -->
+        <article class="brand-card" data-brand="M2 Machines">
+          <div class="brand-card-art m2-art">
+            <img src="images/brands/m2-machines.png" alt="M2 Machines logo" class="brand-logo">
+            <small>14 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">CLASSIC AMERICANA</p>
+            <h3>M2 Machines</h3>
+            <p>Classic American cars, trucks, detailed releases and themed collections.</p>
+            <button class="brand-explore" type="button" data-filter-brand="M2 Machines">Explore collection ↗</button>
+            <a href="m2-machines.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 15 KYOSHO -->
+        <article class="brand-card" data-brand="Kyosho">
+          <div class="brand-card-art kyosho-art">
+            <img src="images/brands/kyosho.png" alt="Kyosho logo" class="brand-logo">
+            <small>15 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">PRECISION MODELS</p>
+            <h3>Kyosho</h3>
+            <p>Japanese model-making with a broad range of detailed collector vehicles.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Kyosho">Explore collection ↗</button>
+            <a href="kyosho.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 16 AUTOART -->
+        <article class="brand-card" data-brand="AUTOart">
+          <div class="brand-card-art autoart-art">
+            <img src="images/brands/autoart.png" alt="AUTOart logo" class="brand-logo">
+            <small>16 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">HIGH-END COLLECTIBLES</p>
+            <h3>AUTOart</h3>
+            <p>Premium-scale replicas known for intricate details and presentation.</p>
+            <button class="brand-explore" type="button" data-filter-brand="AUTOart">Explore collection ↗</button>
+            <a href="autoart.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 17 SOLIDO -->
+        <article class="brand-card" data-brand="Solido">
+          <div class="brand-card-art solido-art">
+            <img src="images/brands/solido.png" alt="Solido logo" class="brand-logo">
+            <small>17 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">CLASSIC &amp; MODERN</p>
+            <h3>Solido</h3>
+            <p>Classic and contemporary vehicle replicas across popular collector scales.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Solido">Explore collection ↗</button>
+            <a href="solido.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 18 MINICHAMPS -->
+        <article class="brand-card" data-brand="Minichamps">
+          <div class="brand-card-art minichamps-art">
+            <img src="images/brands/minichamps.png" alt="Minichamps logo" class="brand-logo">
+            <small>18 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">MOTORSPORT HERITAGE</p>
+            <h3>Minichamps</h3>
+            <p>Collector replicas covering motorsport, road cars and automotive history.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Minichamps">Explore collection ↗</button>
+            <a href="minichamps.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 19 CCA -->
+        <article class="brand-card" data-brand="CCA">
+          <div class="brand-card-art cca-art">
+            <img src="images/brands/cca.png" alt="CCA logo" class="brand-logo">
+            <small>19 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">COLLECTOR DISCOVERY</p>
+            <h3>CCA</h3>
+            <p>A collector directory entry. Check the exact maker and model details before buying.</p>
+            <button class="brand-explore" type="button" data-filter-brand="CCA">Explore collection ↗</button>
+            <a href="cca.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 20 MAISTO -->
+        <article class="brand-card" data-brand="Maisto">
+          <div class="brand-card-art maisto-art">
+            <img src="images/brands/maisto.png" alt="Maisto logo" class="brand-logo">
+            <small>20 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">WIDE MODEL RANGE</p>
+            <h3>Maisto</h3>
+            <p>A broad range of diecast vehicles, from accessible models to larger scale replicas.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Maisto">Explore collection ↗</button>
+            <a href="maisto.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+        <!-- 21 COOL CAR -->
+        <article class="brand-card" data-brand="Cool Car">
+          <div class="brand-card-art coolcar-art">
+            <img src="images/brands/cool-car.png" alt="Cool Car logo" class="brand-logo">
+            <small>21 / DIECAST</small>
+          </div>
+
+          <div class="brand-card-info">
+            <p class="brand-category">COLLECTOR DISCOVERY</p>
+            <h3>Cool Car</h3>
+            <p>A collector directory entry. Verify the exact manufacturer and release information.</p>
+            <button class="brand-explore" type="button" data-filter-brand="Cool Car">Explore collection ↗</button>
+            <a href="cool-car.html" class="brand-explore">Explore brand ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+        <!-- COLLECTOR'S ACADEMY -->
+    <section class="section learning-section" id="learn">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTOR'S ACADEMY</p>
+          <h2>Learn before <span>you collect.</span></h2>
+        </div>
+        <p>Simple guides to help every collector get started.</p>
+      </div>
+
+      <div class="learning-grid">
+        <a href="understand-scales.html" class="learning-card">
+          <span>01 / THE BASICS</span>
+          <h3>Understand Scales</h3>
+          <p>Learn what 1:64, 1:43, 1:24 and other model scales mean.</p>
+        </a>
+
+        <a href="rarity-variants.html" class="learning-card">
+          <span>02 / THE DETAILS</span>
+          <h3>Rarity &amp; Variants</h3>
+          <p>Understand special releases, variations and collector terminology.</p>
+        </a>
+
+        <a href="store-protect.html" class="learning-card">
+          <span>03 / COLLECTOR CARE</span>
+          <h3>Store &amp; Protect</h3>
+          <p>Explore display ideas, storage options and packaging care.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- MARKET WATCH -->
+    <section class="section market-section dd-market" id="market">
+
+      <!-- MARKET WATCH HERO -->
+      <div class="dd-market-hero">
+        <p class="eyebrow">THE COLLECTOR'S MARKET DESK / 01</p>
+        <p class="dd-market-kicker">
+          COLLECT SMARTER. BUY WITH CONFIDENCE.
+        </p>
+
+        <h2>
+          Know the market.<br>
+          <span>Protect your passion.</span>
+        </h2>
+
+        <p class="dd-market-intro">
+          Understand MRP, retail and resale prices.
+          Learn how scalping works, recognise suspicious listings,
+          check a model before paying, and know what to do
+          if a purchase goes wrong.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#dd-price-basics">
+            Understand pricing ↓
+          </a>
+
+          <a class="button button-secondary" href="#dd-safe-buying">
+            Safe buying checklist ↗
+          </a>
+        </div>
+
+        <div class="dd-market-promise">
+          <span>NO HYPE BUYING</span>
+          <i></i>
+          <span>NO BLIND PAYMENTS</span>
+          <i></i>
+          <span>INFORMED COLLECTING</span>
+        </div>
+      </div>
+
+      <!-- MARKET NAVIGATION -->
+      <div class="dd-market-nav-wrap">
+        <p class="eyebrow">EXPLORE THE MARKET DESK</p>
+
+        <nav class="dd-market-nav" aria-label="Market Watch topics">
+          <a href="#dd-price-basics">01 · Price basics</a>
+          <a href="#dd-scalping">02 · Scalping</a>
+          <a href="#dd-scam-alert">03 · Scam alert</a>
+          <a href="#dd-safe-buying">04 · Buy safely</a>
+          <a href="#dd-after-purchase">05 · After buying</a>
+          <a href="#dd-help">06 · Get help</a>
+          <a href="#dd-market-faq">07 · FAQs</a>
+        </nav>
+      </div>
+
+      <!-- 01 PRICE BASICS -->
+      <section class="dd-market-block" id="dd-price-basics">
+        <div class="dd-market-heading">
+          <p class="eyebrow">01 / UNDERSTAND THE PRICE</p>
+
+          <h3>
+            MRP, retail, resale.<br>
+            <span>Know the difference.</span>
+          </h3>
+
+          <p>
+            Before deciding whether a diecast model is fairly priced,
+            identify what kind of price you are looking at.
+          </p>
+        </div>
+
+        <div class="dd-price-cards">
+
+          <article class="dd-market-card">
+            <span class="dd-card-index">A / PACKAGING</span>
+            <h4>MRP</h4>
+
+            <p>
+              <strong>Maximum Retail Price</strong> is the retail
+              sale price printed on a pre-packaged product,
+              inclusive of all taxes. For packaged commodities
+              covered by Legal Metrology rules, a retailer or
+              dealer cannot sell above the applicable MRP.
+            </p>
+
+            <p class="dd-card-tip">
+              Collector check: look for the printed MRP on
+              the actual package.
+            </p>
+          </article>
+
+          <article class="dd-market-card">
+            <span class="dd-card-index">B / STORE</span>
+            <h4>Retail price</h4>
+
+            <p>
+              This is the price a shop or authorised seller
+              offers when selling a new model. It may be lower
+              than MRP because of a discount.
+            </p>
+
+            <p class="dd-card-tip">
+              Collector check: ask for the final payable
+              amount before confirming your order.
+            </p>
+          </article>
+
+          <article class="dd-market-card">
+            <span class="dd-card-index">
+              C / COLLECTOR-TO-COLLECTOR
+            </span>
+
+            <h4>Resale price</h4>
+
+            <p>
+              This is the amount a later owner asks when
+              selling a model. It can be higher or lower
+              than the original price depending on demand,
+              condition and availability.
+            </p>
+
+            <p class="dd-card-tip">
+              Collector check: compare similar completed sales.
+              An asking price is not proof of market value.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="dd-market-callout">
+          <span class="dd-callout-label">
+            IMPORTANT INDIA PRICE RULE
+          </span>
+
+          <p>
+            For a pre-packaged commodity covered by the Legal
+            Metrology (Packaged Commodities) Rules, a retail
+            dealer or other person cannot sell it above its
+            applicable printed retail sale price.
+            A private second-hand collector resale is a
+            different situation. The facts and type of
+            seller matter.
+          </p>
+
+          <a
+            href="https://consumeraffairs.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Department of Consumer Affairs ↗
+          </a>
+        </div>
+
+        <!-- PRICE EXAMPLE -->
+        <div class="dd-example">
+          <div class="dd-example-head">
+            <div>
+              <p class="eyebrow">
+                PRICE EXAMPLE / ILLUSTRATIVE ONLY
+              </p>
+
+              <h4>One model. Three different prices.</h4>
+            </div>
+
+            <span class="dd-example-tag">
+              NOT A LIVE PRICE
+            </span>
+          </div>
+
+          <div class="dd-price-example-grid">
+
+            <div>
+              <span>Printed MRP</span>
+              <strong>₹199</strong>
+              <small>On the package</small>
+            </div>
+
+            <div>
+              <span>Store offer</span>
+              <strong>₹179</strong>
+              <small>Discounted retail</small>
+            </div>
+
+            <div>
+              <span>Resale asking price</span>
+              <strong>₹499</strong>
+              <small>Private seller's asking price</small>
+            </div>
+
+          </div>
+
+          <p class="dd-example-note">
+            The ₹499 figure is only an example.
+            It does not prove the model is worth that amount.
+            Compare condition, availability and actual
+            completed transactions before deciding.
+          </p>
+        </div>
+
+        <div class="dd-market-heading dd-subheading">
+          <p class="eyebrow">
+            WHAT CHANGES A MODEL'S PRICE?
+          </p>
+
+          <h4>
+            Price is influenced by more than hype.
+          </h4>
+        </div>
+
+        <div class="dd-factor-grid">
+
+          <div>
+            <b>Availability</b>
+            <p>Is the model still available at retail?</p>
+          </div>
+
+          <div>
+            <b>Demand</b>
+            <p>Are collectors genuinely searching for it?</p>
+          </div>
+
+          <div>
+            <b>Condition</b>
+            <p>Is it sealed, loose, damaged or complete?</p>
+          </div>
+
+          <div>
+            <b>Packaging</b>
+            <p>Is the original card or box included?</p>
+          </div>
+
+          <div>
+            <b>Edition details</b>
+            <p>Is the limited-edition claim documented?</p>
+          </div>
+
+          <div>
+            <b>Seller reliability</b>
+            <p>Does the seller have a trustworthy record?</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 02 SCALPING -->
+      <section
+        class="dd-market-block dd-market-dark"
+        id="dd-scalping"
+      >
+
+        <div class="dd-market-heading">
+          <p class="eyebrow">
+            02 / SCALPERS &amp; ARTIFICIAL HYPE
+          </p>
+
+          <h3>
+            Don't let scarcity<br>
+            <span>make the decision for you.</span>
+          </h3>
+
+          <p>
+            Scalping is a resale practice where people acquire
+            popular or limited stock and relist it at much
+            higher prices, often taking advantage of strong
+            demand and limited availability.
+          </p>
+        </div>
+
+        <div class="dd-two-col">
+
+          <div class="dd-explain-panel">
+            <span class="dd-card-index">
+              HOW IT CAN HAPPEN
+            </span>
+
+            <ol class="dd-number-list">
+              <li>
+                <b>A popular release arrives.</b>
+                <span>Collectors are excited.</span>
+              </li>
+
+              <li>
+                <b>Stock disappears quickly.</b>
+                <span>
+                  Some buyers may purchase multiple units.
+                </span>
+              </li>
+
+              <li>
+                <b>Inflated listings appear.</b>
+                <span>
+                  Resellers ask much higher prices.
+                </span>
+              </li>
+
+              <li>
+                <b>Collectors feel pressured.</b>
+                <span>
+                  Some pay without checking alternatives.
+                </span>
+              </li>
+            </ol>
+          </div>
+
+          <div class="dd-explain-panel dd-warning-panel">
+            <span class="dd-card-index">
+              WATCH FOR THESE CLAIMS
+            </span>
+
+            <h4>Hype is not evidence.</h4>
+
+            <ul class="dd-check-list">
+              <li>
+                “Buy now, price doubles tomorrow.”
+              </li>
+
+              <li>
+                “Last piece anywhere” without proof.
+              </li>
+
+              <li>
+                “Guaranteed investment.”
+              </li>
+
+              <li>
+                “Rare” without supporting details.
+              </li>
+
+              <li>
+                Pressure to pay immediately.
+              </li>
+            </ul>
+
+            <p class="dd-small-note">
+              A high resale price alone does not prove
+              fraud or illegality.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="dd-market-callout dd-callout-red">
+          <span class="dd-callout-label">
+            THE DIECAST DISTRICT RULE
+          </span>
+
+          <p>
+            Never buy only because someone says
+            “you will never get it again.”
+            Compare prices and give yourself time to decide.
+          </p>
+        </div>
+      </section>
+
+      <!-- 03 SCAM ALERT -->
+      <section class="dd-market-block" id="dd-scam-alert">
+
+        <div class="dd-market-heading">
+          <p class="eyebrow">
+            03 / SCAMS &amp; COUNTERFEITS
+          </p>
+
+          <h3>
+            Spot the warning signs.<br>
+            <span>Protect your collection.</span>
+          </h3>
+
+          <p>
+            Before purchasing from an unfamiliar seller,
+            verify the exact model, the seller's identity,
+            and the payment terms.
+          </p>
+        </div>
+
+        <div class="dd-factor-grid">
+
+          <div>
+            <b>Copied photographs</b>
+            <p>
+              Ask for fresh pictures showing the exact
+              car and its packaging.
+            </p>
+          </div>
+
+          <div>
+            <b>Suspiciously cheap listings</b>
+            <p>
+              Compare with trusted sellers and check
+              for missing details.
+            </p>
+          </div>
+
+          <div>
+            <b>Advance payment pressure</b>
+            <p>
+              Be cautious when a seller insists on
+              immediate payment without clear terms.
+            </p>
+          </div>
+
+          <div>
+            <b>Fake tracking</b>
+            <p>
+              Verify shipment information through the
+              courier's official website.
+            </p>
+          </div>
+
+          <div>
+            <b>Misrepresented condition</b>
+            <p>
+              Check for damage, repairs, missing parts
+              and packaging condition.
+            </p>
+          </div>
+
+          <div>
+            <b>Suspicious payment requests</b>
+            <p>
+              Never share OTPs, UPI PINs, passwords
+              or banking credentials.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="dd-market-callout">
+          <span class="dd-callout-label">
+            AUTHENTICITY CHECK
+          </span>
+
+          <p>
+            Compare model numbers, logos, packaging,
+            production details and official reference photos.
+            A single difference does not automatically prove
+            a model is counterfeit.
+          </p>
+        </div>
+      </section>
+
+      <!-- 04 SAFE BUYING -->
+      <section
+        class="dd-market-block dd-market-dark"
+        id="dd-safe-buying"
+      >
+
+        <div class="dd-market-heading">
+          <p class="eyebrow">
+            04 / SMART BUYING SYSTEM
+          </p>
+
+          <h3>
+            Check first.<br>
+            <span>Collect with confidence.</span>
+          </h3>
+
+          <p>
+            Follow these steps before paying for a
+            diecast model.
+          </p>
+        </div>
+
+        <div class="dd-explain-panel">
+
+          <ol class="dd-number-list">
+            <li>
+              <b>Identify the exact model.</b>
+              <span>
+                Check brand, casting, scale, colour,
+                release and edition.
+              </span>
+            </li>
+
+            <li>
+              <b>Research its availability.</b>
+              <span>
+                Look at official retailers and trusted sellers.
+              </span>
+            </li>
+
+            <li>
+              <b>Compare prices.</b>
+              <span>
+                Prefer comparable completed sales
+                over unsupported asking prices.
+              </span>
+            </li>
+
+            <li>
+              <b>Verify the condition.</b>
+              <span>
+                Ask for photographs of the exact item.
+              </span>
+            </li>
+
+            <li>
+              <b>Check the seller.</b>
+              <span>
+                Review reputation, terms and buyer protection.
+              </span>
+            </li>
+
+            <li>
+              <b>Confirm the final amount.</b>
+              <span>
+                Include delivery charges and make sure
+                the purchase fits your budget.
+              </span>
+            </li>
+          </ol>
+
+        </div>
+
+        <div class="dd-market-heading dd-subheading">
+          <p class="eyebrow">
+            INTERACTIVE COLLECTOR CHECKLIST
+          </p>
+
+          <h4>
+            Tick each item before buying.
+          </h4>
+        </div>
+
+        <div class="dd-checklist">
+
+          <label>
+            <input type="checkbox">
+            I know the exact model and variant.
+          </label>
+
+          <label>
+            <input type="checkbox">
+            I have checked current retail availability.
+          </label>
+
+          <label>
+            <input type="checkbox">
+            I have compared similar prices.
+          </label>
+
+          <label>
+            <input type="checkbox">
+            I have verified the condition and photographs.
+          </label>
+
+          <label>
+            <input type="checkbox">
+            I have checked the seller's reputation.
+          </label>
+
+          <label>
+            <input type="checkbox">
+            I understand the payment and delivery terms.
+          </label>
+
+        </div>
+
+      </section>
+
+      <!-- 05 AFTER PURCHASE -->
+      <section
+        class="dd-market-block"
+        id="dd-after-purchase"
+      >
+
+        <div class="dd-market-heading">
+          <p class="eyebrow">
+            05 / AFTER PURCHASE
+          </p>
+
+          <h3>
+            Something went wrong?<br>
+            <span>Know what to do.</span>
+          </h3>
+        </div>
+
+        <div class="dd-explain-panel">
+
+          <ol class="dd-number-list">
+
+            <li>
+              <b>Preserve evidence.</b>
+              <span>
+                Save the listing, messages, payment receipt
+                and tracking details.
+              </span>
+            </li>
+
+            <li>
+              <b>Contact the seller or platform.</b>
+              <span>
+                Explain the issue and use the official
+                dispute or refund process.
+              </span>
+            </li>
+
+            <li>
+              <b>Contact your bank.</b>
+              <span>
+                If you suspect payment fraud, contact your
+                bank or payment provider immediately.
+              </span>
+            </li>
+
+            <li>
+              <b>Report through official channels.</b>
+              <span>
+                Use the appropriate consumer grievance
+                or cybercrime reporting service.
+              </span>
+            </li>
+
+          </ol>
+
+        </div>
+      </section>
+
+      <!-- 06 OFFICIAL HELP -->
+      <section
+        class="dd-market-block dd-market-dark"
+        id="dd-help"
+      >
+
+        <div class="dd-market-heading">
+          <p class="eyebrow">
+            06 / OFFICIAL HELP IN INDIA
+          </p>
+
+          <h3>
+            Need support?<br>
+            <span>Use trusted channels.</span>
+          </h3>
+        </div>
+
+        <div class="dd-price-cards">
+
+          <article class="dd-market-card">
+            <span class="dd-card-index">
+              CONSUMER COMPLAINTS
+            </span>
+
+            <h4>National Consumer Helpline</h4>
+
+            <p>
+              For consumer grievances and guidance.
+            </p>
+
+            <h3>1915</h3>
+
+            <a
+              href="https://consumerhelpline.gov.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Official website ↗
+            </a>
+          </article>
+
+          <article class="dd-market-card">
+            <span class="dd-card-index">
+              FINANCIAL CYBER FRAUD
+            </span>
+
+            <h4>Cyber Crime Helpline</h4>
+
+            <p>
+              For reporting suspected financial cyber fraud.
+            </p>
+
+            <h3>1930</h3>
+
+            <a
+              href="https://cybercrime.gov.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Official website ↗
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 07 FAQ -->
+      <section class="dd-market-block" id="dd-market-faq">
+
+        <div class="dd-market-heading">
+          <p class="eyebrow">
+            07 / COLLECTOR FAQ
+          </p>
+
+          <h3>
+            Questions worth<br>
+            <span>asking before buying.</span>
+          </h3>
+        </div>
+
+        <div class="dd-faq-list">
+
+          <details>
+            <summary>
+              Is every model sold above its original MRP illegal?
+            </summary>
+
+            <p>
+              No. A private second-hand collector resale is
+              different from the retail sale of a covered
+              pre-packaged commodity. The type of transaction
+              and applicable rules matter.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Is a rare model always expensive?
+            </summary>
+
+            <p>
+              No. Rarity and demand are different.
+              A model may be uncommon but have limited
+              collector demand.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Does a limited edition guarantee future value?
+            </summary>
+
+            <p>
+              No. Collectible values can rise, fall or
+              remain unchanged.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              How can I check whether a price is fair?
+            </summary>
+
+            <p>
+              Identify the exact release and compare
+              similar models in similar condition.
+              Completed sales are generally more useful
+              than asking prices.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              What should I do if a seller disappears
+              after payment?
+            </summary>
+
+            <p>
+              Save evidence, contact your bank or payment
+              provider immediately, and report suspected
+              financial cyber fraud through official channels.
+            </p>
+          </details>
+
+        </div>
+      </section>
+
+      <!-- MARKET WATCH SOURCES -->
+      <div class="dd-market-sources">
+
+        <p class="eyebrow">
+          OFFICIAL SOURCES &amp; RESPONSIBLE COLLECTING
+        </p>
+
+        <p>
+          This guide provides general educational information.
+          It is not legal, financial or investment advice.
+          Always consult official sources for current rules.
+        </p>
+
+        <div class="dd-source-links">
+
+          <a
+            href="https://consumeraffairs.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Department of Consumer Affairs ↗
+          </a>
+
+          <a
+            href="https://consumerhelpline.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            National Consumer Helpline ↗
+          </a>
+
+          <a
+            href="https://cybercrime.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            National Cyber Crime Reporting Portal ↗
+          </a>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- END MARKET WATCH -->
+
+    <!-- DD DEAL CHECK -->
+    <section class="section deal-check-promo" id="deal-check">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">
+            DIECAST DISTRICT / COLLECTOR TOOLS
+          </p>
+
+          <h2>
+            Is it worth <span>the price?</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="deal-check-promo-content">
+
+        <h3>Introducing DD Deal Check.</h3>
+
+        <p>
+          Found a diecast car but unsure about the asking price?
+          Upload a photo or enter the model details, research
+          comparable prices, and evaluate whether the deal
+          looks reasonable.
+        </p>
+
+        <p>
+          Compare prices, consider rarity and condition,
+          and make a more informed buying decision.
+        </p>
+
+        <a
+          href="deal-check.html"
+          class="button button-primary"
+        >
+          Launch Deal Check ↗
+        </a>
+
+      </div>
+
+    </section>
+    <!-- END DD DEAL CHECK -->
+         <!-- MY GARAGE -->
+    <section class="section garage-section" id="garage">
+
+      <div class="garage-copy">
+        <p class="eyebrow">YOUR COLLECTION. YOUR RULES.</p>
+        <h2>Your personal <span>garage.</span></h2>
+
+        <p>
+          Add your models, keep track of your collection,
+          and build your own digital diecast showroom.
+        </p>
+      </div>
+
+      <!-- COLLECTION STATISTICS -->
+       <!-- MY COLLECTION VALUE DASHBOARD -->
+<section class="collection-dashboard" id="collection-dashboard" aria-labelledby="collection-dashboard-title">
+
+  <div class="collection-dashboard-heading">
+    <div>
+      <p class="eyebrow">YOUR COLLECTION / FINANCIAL OVERVIEW</p>
+      <h3 id="collection-dashboard-title">My Collection Value</h3>
+      <p>Track what you paid for your models and compare it with their estimated current market value.</p>
+    </div>
+    <span class="collection-dashboard-label">COLLECTOR OVERVIEW</span>
+  </div>
+
+  <div class="collection-value-grid">
+
+    <article class="collection-value-card purchase-value-card">
+      <p class="collection-value-label">TOTAL PURCHASE SPEND</p>
+      <strong id="total-purchase-spend">₹0</strong>
+      <span>Combined purchase prices recorded in your Garage</span>
+    </article>
+
+    <article class="collection-value-card market-value-card">
+      <p class="collection-value-label">ESTIMATED MARKET VALUE</p>
+      <strong id="estimated-market-value">Not calculated</strong>
+      <span id="market-value-caption">Add market comparison data to your cars to estimate this value.</span>
+    </article>
+
+    <article class="collection-value-card difference-value-card">
+      <p class="collection-value-label">ESTIMATED DIFFERENCE</p>
+      <strong id="collection-value-difference">Not calculated</strong>
+      <span id="collection-difference-caption">Available when purchase and market values are recorded.</span>
+    </article>
+
+  </div>
+
+  <div class="collection-dashboard-details">
+
+    <article class="collection-detail-card">
+      <p class="eyebrow">PURCHASE RECORDS</p>
+      <strong id="priced-car-count">0</strong>
+      <span>Cars with a purchase price recorded</span>
+    </article>
+
+    <article class="collection-detail-card">
+      <p class="eyebrow">MARKET RESEARCH</p>
+      <strong id="market-data-count">0</strong>
+      <span>Cars with a market estimate recorded</span>
+    </article>
+
+  </div>
+
+  <div class="collection-market-disclaimer">
+    <strong>How to read these numbers</strong>
+    <p>
+      Purchase spend is based on the prices you enter. Estimated market value is not a guaranteed selling price.
+      It should be based on comparable models, variants and conditions, preferably supported by completed sales.
+      Cars without reliable comparison data should remain marked as "Not enough data" rather than being assigned
+      an invented value.
+    </p>
+  </div>
+
+</section>
+      <div class="garage-stats">
+        <div class="stat-card">
+          <span id="total-cars">0</span>
+          <p>Total Models</p>
+        </div>
+
+        <div class="stat-card">
+          <span id="total-brands">0</span>
+          <p>Brands</p>
+        </div>
+      </div>
+
+      <!-- GARAGE MANAGER -->
+      <div class="garage-manager">
+
+        <div class="garage-toolbar">
+          <div>
+            <p class="eyebrow">THE DIGITAL SHOWROOM</p>
+            <h3>My Collection</h3>
+          </div>
+
+          <button class="button button-primary" id="show-car-form" type="button">
+            + Add a Car
+          </button>
+        </div>
+
+        <!-- ADD CAR FORM -->
+        <form id="car-form" class="car-form" hidden>
+          <h3>Add a model</h3>
+
+          <div class="form-grid">
+
+            <label>
+              Model name *
+              <input name="model" type="text" placeholder="e.g. Porsche 911 GT3 RS" required maxlength="100">
+            </label>
+
+            <label>
+              Brand *
+              <select name="brand" required>
+                <option value="">Choose brand</option>
+                <option>Hot Wheels</option>
+                <option>Matchbox</option>
+                <option>Mini GT</option>
+                <option>Tomica</option>
+                <option>Bburago</option>
+                <option>Majorette</option>
+                <option>Kaido House</option>
+                <option>Tarmac Works</option>
+                <option>INNO64</option>
+                <option>Pop Race</option>
+                <option>Para64</option>
+                <option>GreenLight</option>
+                <option>Auto World</option>
+                <option>M2 Machines</option>
+                <option>Kyosho</option>
+                <option>AUTOart</option>
+                <option>Solido</option>
+                <option>Minichamps</option>
+                <option>CCA</option>
+                <option>Maisto</option>
+                <option>Cool Car</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label>
+              Scale
+              <select name="scale">
+                <option value="1:64">1:64</option>
+                <option value="1:43">1:43</option>
+                <option value="1:24">1:24</option>
+                <option value="1:18">1:18</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+
+            <label>
+              Purchase price (₹)
+              <input name="price" type="number" min="0" step="0.01" placeholder="e.g. 199">
+            </label>
+
+            <div class="form-field full-width">
+              <label for="photo">Upload car photo (optional)</label>
+              <input type="file" id="photo" name="photo" accept="image/*">
+              <small>Choose an image from your phone or computer.</small>
+            </div>
+
+            <div class="form-field full-width">
+              <label for="photo-url">Or paste an image URL (optional)</label>
+              <input type="url" id="photo-url" name="photo-url" placeholder="https://example.com/car.jpg">
+              <small>
+                Use either a photo upload or an image URL, not both.
+                Leave both empty if you don't have a picture.
+              </small>
+            </div>
+
+            <div id="photo-preview" class="photo-preview full-width" hidden>
+              <img id="preview-image" alt="Selected car photo preview">
+              <button type="button" id="remove-photo">Remove photo</button>
+            </div>
+
+          </div>
+
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Save to Garage</button>
+            <button class="button button-secondary" id="cancel-car-form" type="button">Cancel</button>
+          </div>
+
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <!-- SEARCH AND FILTER -->
+        <div class="collection-controls">
+          <input id="car-search" type="search" placeholder="Search your collection..." aria-label="Search your collection">
+
+          <select id="brand-filter" aria-label="Filter by brand">
+            <option value="all">All brands</option>
+          </select>
+        </div>
+
+        <div id="car-list" class="car-list"></div>
+
+        <p id="empty-message" class="empty-message">
+          Your garage is waiting. Add your first model to get started.
+        </p>
+
+        <p class="storage-note">
+          Your collection is saved locally in this browser. It is not yet
+          synced between devices or shared with other collectors.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand brand-image" href="#home" aria-label="Back to home">
+      <img src="images/diecast-district-logo.png" alt="Diecast District official logo">
+    </a>
+
+    <p>Built for the love of little machines.</p>
+    <span>© 2026 Diecast District</span>
+  </footer>
+
+</body>
+</html>

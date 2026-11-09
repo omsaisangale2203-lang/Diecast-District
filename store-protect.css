@@ -1,0 +1,75 @@
+/* Diecast District — Store & Protect page. Styles are scoped to .care-page. */
+.care-page { background:#0e0e0e; color:#f4f4f4; }
+.care-main { width:min(1180px,calc(100% - 40px)); margin:0 auto; }
+.care-page .site-header { position:relative; }
+.care-hero { display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; padding:76px 0 58px; }
+.care-hero-copy h1 { font:700 clamp(3rem,7vw,6rem)/.98 "Space Grotesk",sans-serif; letter-spacing:-.06em; margin:14px 0 22px; }
+.care-hero-copy h1 span,.care-section h2 span,.care-quiz-section h2 span,.care-complete h2 span { color:#e33b42; }
+.care-lead,.care-intro { color:#b9b9b9; line-height:1.8; max-width:790px; }
+.care-lead { font-size:1.08rem; max-width:560px; }
+.care-primary-link { display:inline-flex; align-items:center; gap:14px; margin-top:20px; padding:13px 19px; border:0; border-radius:3px; background:#e33b42; color:white; font:700 .9rem "DM Sans",sans-serif; text-decoration:none; cursor:pointer; }
+.care-hero-art { min-height:330px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; border:1px solid #393939; background:radial-gradient(ellipse at 60% 45%,#343434 0,#1a1a1a 45%,#111 78%); overflow:hidden; }
+.care-art-label { display:flex; justify-content:space-between; color:#aaa; font-size:.68rem; letter-spacing:.15em; }
+.care-art-word { align-self:center; color:#f4f4f4; font:700 clamp(4rem,10vw,8rem)/1 "Space Grotesk",sans-serif; letter-spacing:-.09em; text-shadow:7px 8px 0 #8f252b; }
+.care-art-word span { color:#e33b42; }
+.care-hero-art p { color:#e33b42; font-size:.72rem; font-weight:700; letter-spacing:.16em; }
+.care-toc { display:flex; flex-wrap:wrap; gap:12px 22px; padding:18px 0; border-top:1px solid #333; border-bottom:1px solid #333; }
+.care-toc span { color:#e33b42; font-size:.7rem; font-weight:700; letter-spacing:.13em; }
+.care-toc a { color:#ccc; text-decoration:none; font-size:.82rem; }
+.care-toc a:hover { color:#fff; }
+.care-section { padding:68px 0; border-bottom:1px solid #292929; scroll-margin-top:24px; }
+.care-page .eyebrow { color:#e33b42; font-size:.7rem; font-weight:700; letter-spacing:.17em; }
+.care-section h2,.care-quiz-section h2 { margin:12px 0 18px; font:700 clamp(2rem,4vw,3.3rem)/1.08 "Space Grotesk",sans-serif; letter-spacing:-.045em; }
+.care-highlight { margin:28px 0; padding:22px 24px; border:1px solid #4a292b; background:#1d1516; }
+.care-highlight strong { display:block; margin-bottom:8px; color:#ef6268; font:700 1.1rem "Space Grotesk",sans-serif; }
+.care-highlight p { margin:0; color:#c2c2c2; line-height:1.75; }
+.care-highlight.warning { border-color:#6b4d2d; background:#211b14; }
+.care-highlight.warning strong { color:#e6b56c; }
+.care-option-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:30px 0; }
+.care-option { padding:24px; min-height:180px; border:1px solid #343434; background:linear-gradient(145deg,#1c1c1c,#121212); }
+.care-option>span { color:#e34a50; font:700 1rem "Space Grotesk",sans-serif; }
+.care-option h3 { margin:16px 0 8px; font:600 1.25rem "Space Grotesk",sans-serif; }
+.care-option p { color:#bcbcbc; line-height:1.7; margin:0; }
+.care-note { padding:18px 20px; border-left:3px solid #e33b42; background:#171717; color:#bdbdbd; line-height:1.75; }
+.care-two-column { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:30px 0; }
+.care-type { padding:26px; border:1px solid #393939; background:#171717; }
+.care-type-label { color:#e34a50; font-size:.68rem; font-weight:700; letter-spacing:.14em; }
+.care-type h3 { margin:12px 0; font:600 1.4rem "Space Grotesk",sans-serif; }
+.care-type ul { padding-left:20px; margin-bottom:0; }
+.care-type li { color:#bdbdbd; line-height:1.75; margin:8px 0; }
+.care-cleaning-steps { display:grid; gap:0; margin:28px 0; border-top:1px solid #333; }
+.care-cleaning-steps div { display:grid; grid-template-columns:58px 1fr; gap:16px; padding:19px 10px; border-bottom:1px solid #333; }
+.care-cleaning-steps b { color:#e34a50; font:700 1.15rem "Space Grotesk",sans-serif; }
+.care-cleaning-steps span { color:#bdbdbd; line-height:1.7; }
+.care-environment-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:30px 0; }
+.care-environment-grid article { padding:24px; background:#171717; border:1px solid #343434; }
+.care-symbol { color:#e34a50; font-size:1.8rem; }
+.care-environment-grid h3 { margin:12px 0 8px; font:600 1.2rem "Space Grotesk",sans-serif; }
+.care-environment-grid p { color:#bcbcbc; line-height:1.7; margin:0; }
+.care-checklist { display:grid; gap:0; margin:28px 0; border-top:1px solid #333; }
+.care-checklist label { display:flex; gap:12px; align-items:flex-start; padding:17px 10px; border-bottom:1px solid #333; color:#c7c7c7; line-height:1.55; cursor:pointer; }
+.care-checklist input { accent-color:#e33b42; margin-top:4px; }
+.care-quiz-section { padding:70px 0; scroll-margin-top:24px; }
+.care-quiz-section form { display:grid; gap:18px; }
+.care-quiz-section fieldset { margin:0; padding:20px; border:1px solid #393939; background:#171717; }
+.care-quiz-section legend { padding:0 8px; font-weight:700; }
+.care-quiz-section label { display:block; margin:12px 0; color:#c8c8c8; line-height:1.5; cursor:pointer; }
+.care-quiz-section input { accent-color:#e33b42; margin-right:8px; }
+.care-quiz-section .care-primary-link { justify-self:start; margin-top:0; }
+.care-quiz-result { color:#f2f2f2; font-weight:700; min-height:1.5em; }
+.care-complete { margin:20px 0 70px; padding:34px; border:1px solid #4a292b; background:linear-gradient(135deg,#211516,#151313); }
+.care-complete h2 { margin:12px 0; font:700 clamp(2rem,4vw,3rem) "Space Grotesk",sans-serif; }
+.care-complete>p:not(.eyebrow) { max-width:700px; color:#bbb; line-height:1.75; }
+.care-complete>a { display:inline-block; margin-top:12px; color:#fff; font-weight:700; text-decoration:none; }
+.care-page .site-footer { margin-top:0; }
+@media (max-width:760px) {
+  .care-hero { grid-template-columns:1fr; gap:28px; padding:52px 0 38px; }
+  .care-hero-art { min-height:230px; }
+  .care-two-column { grid-template-columns:1fr; }
+}
+@media (max-width:480px) {
+  .care-main { width:min(100% - 28px,1180px); }
+  .care-option-grid,.care-environment-grid { grid-template-columns:1fr; }
+  .care-toc { gap:12px 16px; }
+  .care-cleaning-steps div { grid-template-columns:42px 1fr; gap:10px; }
+}

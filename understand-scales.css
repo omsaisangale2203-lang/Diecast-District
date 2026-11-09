@@ -1,0 +1,76 @@
+/* Diecast District — Understand Scales page
+   All selectors are scoped to .scale-page to avoid changing the homepage. */
+.scale-page { background:#0e0e0e; color:#f4f4f4; }
+.scale-main { width:min(1180px, calc(100% - 40px)); margin:0 auto; }
+.scale-page .site-header { position:relative; }
+.scale-hero { display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; padding:76px 0 58px; }
+.scale-hero-copy h1 { font:700 clamp(3rem,7vw,6rem)/.98 "Space Grotesk",sans-serif; letter-spacing:-.06em; margin:14px 0 22px; }
+.scale-hero-copy h1 span,.scale-section h2 span,.scale-quiz-section h2 span { color:#e33b42; }
+.scale-lead,.scale-intro { color:#b9b9b9; line-height:1.8; max-width:760px; }
+.scale-lead { font-size:1.08rem; max-width:540px; }
+.scale-primary-link { display:inline-flex; align-items:center; gap:14px; margin-top:20px; padding:13px 19px; border:0; border-radius:3px; background:#e33b42; color:white; font:700 .9rem "DM Sans",sans-serif; text-decoration:none; cursor:pointer; }
+.scale-hero-art { min-height:330px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; border:1px solid #393939; background:radial-gradient(ellipse at 60% 45%,#343434 0,#1a1a1a 45%,#111 78%); overflow:hidden; }
+.scale-art-label { display:flex; justify-content:space-between; color:#aaa; font-size:.68rem; letter-spacing:.15em; }
+.scale-art-car { align-self:center; color:#f4f4f4; font:700 clamp(6rem,15vw,11rem)/1 "Space Grotesk",sans-serif; letter-spacing:-.09em; text-shadow:7px 8px 0 #8f252b; }
+.scale-hero-art p { color:#e33b42; font-size:.72rem; font-weight:700; letter-spacing:.2em; }
+.scale-toc { display:flex; flex-wrap:wrap; gap:12px 22px; padding:18px 0; border-top:1px solid #333; border-bottom:1px solid #333; }
+.scale-toc span { color:#e33b42; font-size:.7rem; font-weight:700; letter-spacing:.13em; }
+.scale-toc a { color:#ccc; text-decoration:none; font-size:.82rem; }
+.scale-toc a:hover { color:#fff; }
+.scale-section { padding:70px 0; border-bottom:1px solid #292929; scroll-margin-top:24px; }
+.scale-page .eyebrow { color:#e33b42; font-size:.7rem; font-weight:700; letter-spacing:.17em; }
+.scale-section h2,.scale-quiz-section h2 { margin:12px 0 18px; font:700 clamp(2rem,4vw,3.3rem)/1.08 "Space Grotesk",sans-serif; letter-spacing:-.045em; }
+.scale-explainer { display:flex; align-items:center; gap:28px; margin:32px 0 24px; padding:28px; background:#171717; border:1px solid #333; }
+.scale-ratio { color:#e33b42; font:700 clamp(3.5rem,8vw,6rem)/1 "Space Grotesk",sans-serif; white-space:nowrap; }
+.scale-ratio span { color:#777; }
+.scale-explainer h3 { margin:0 0 8px; font:600 1.35rem "Space Grotesk",sans-serif; }
+.scale-explainer p,.scale-note,.scale-callout p { margin:0; color:#bdbdbd; line-height:1.75; }
+.scale-note { padding:18px 20px; border-left:3px solid #e33b42; background:#171717; }
+.scale-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:30px; }
+.scale-card { position:relative; min-height:190px; padding:22px; border:1px solid #343434; background:linear-gradient(145deg,#1c1c1c,#121212); }
+.scale-card.featured { border-color:#a83238; background:linear-gradient(145deg,#2a1718,#151313); }
+.scale-card-number { color:#999; font-size:.65rem; letter-spacing:.12em; }
+.scale-card h3 { margin:18px 0 4px; font:700 2.2rem "Space Grotesk",sans-serif; }
+.scale-size { color:#e34a50; font-weight:700; }
+.scale-card p:last-child { color:#aaa; line-height:1.6; font-size:.9rem; }
+.scale-footnote { color:#888; font-size:.8rem; line-height:1.6; margin-top:18px; }
+.scale-formula { padding:24px; background:#191919; border:1px solid #373737; display:flex; flex-direction:column; gap:10px; }
+.scale-formula span,.scale-example span { color:#999; font-size:.68rem; letter-spacing:.14em; }
+.scale-formula strong { font:600 clamp(1.1rem,3vw,1.8rem) "Space Grotesk",sans-serif; }
+.scale-example { display:flex; align-items:center; flex-wrap:wrap; gap:20px; padding:24px 0; }
+.scale-example div { display:flex; flex-direction:column; gap:8px; }
+.scale-example strong { font:700 1.8rem "Space Grotesk",sans-serif; }
+.scale-operator { color:#e34a50; font-weight:700; }
+.scale-callout { margin:28px 0; padding:24px; border:1px solid #4a292b; background:#1d1516; }
+.scale-callout strong { display:block; margin-bottom:8px; color:#ef6268; font:700 1.1rem "Space Grotesk",sans-serif; }
+.scale-choice-list { margin:28px 0; border-top:1px solid #333; }
+.scale-choice-list div { display:grid; grid-template-columns:100px 1fr; gap:18px; padding:18px 10px; border-bottom:1px solid #333; }
+.scale-choice-list b { color:#e34a50; font:700 1.15rem "Space Grotesk",sans-serif; }
+.scale-choice-list span { color:#bbb; line-height:1.6; }
+.scale-quiz-section { padding:70px 0; scroll-margin-top:24px; }
+.scale-quiz-section form { display:grid; gap:18px; }
+.scale-quiz-section fieldset { margin:0; padding:20px; border:1px solid #393939; background:#171717; }
+.scale-quiz-section legend { padding:0 8px; font-weight:700; }
+.scale-quiz-section label { display:block; margin:12px 0; color:#c8c8c8; line-height:1.5; cursor:pointer; }
+.scale-quiz-section input { accent-color:#e33b42; margin-right:8px; }
+.scale-quiz-section .scale-primary-link { justify-self:start; margin-top:0; }
+.scale-quiz-result { color:#f2f2f2; font-weight:700; min-height:1.5em; }
+.scale-next { display:flex; align-items:center; justify-content:space-between; gap:24px; margin:20px 0 70px; padding:28px; background:#191919; border:1px solid #363636; }
+.scale-next h2 { margin:8px 0; font:700 1.8rem "Space Grotesk",sans-serif; }
+.scale-next p:not(.eyebrow) { color:#aaa; margin:0; }
+.scale-next a { color:#fff; text-decoration:none; font-weight:700; white-space:nowrap; }
+.scale-page .site-footer { margin-top:0; }
+@media (max-width:760px) {
+  .scale-hero { grid-template-columns:1fr; gap:28px; padding:52px 0 38px; }
+  .scale-hero-art { min-height:230px; }
+  .scale-cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .scale-explainer { align-items:flex-start; flex-direction:column; gap:16px; }
+  .scale-next { align-items:flex-start; flex-direction:column; }
+}
+@media (max-width:480px) {
+  .scale-main { width:min(100% - 28px,1180px); }
+  .scale-cards { grid-template-columns:1fr; }
+  .scale-toc { gap:12px 16px; }
+  .scale-choice-list div { grid-template-columns:72px 1fr; gap:12px; }
+  .scale-example { gap:12px; }
+}

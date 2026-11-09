@@ -1,0 +1,77 @@
+/* Diecast District — Rarity & Variants page. Styles are scoped to .rarity-page. */
+.rarity-page { background:#0e0e0e; color:#f4f4f4; }
+.rarity-main { width:min(1180px,calc(100% - 40px)); margin:0 auto; }
+.rarity-page .site-header { position:relative; }
+.rarity-hero { display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; padding:76px 0 58px; }
+.rarity-hero-copy h1 { font:700 clamp(3rem,7vw,6rem)/.98 "Space Grotesk",sans-serif; letter-spacing:-.06em; margin:14px 0 22px; }
+.rarity-hero-copy h1 span,.rarity-section h2 span,.rarity-quiz-section h2 span { color:#e33b42; }
+.rarity-lead,.rarity-intro { color:#b9b9b9; line-height:1.8; max-width:790px; }
+.rarity-lead { font-size:1.08rem; max-width:560px; }
+.rarity-primary-link { display:inline-flex; align-items:center; gap:14px; margin-top:20px; padding:13px 19px; border:0; border-radius:3px; background:#e33b42; color:white; font:700 .9rem "DM Sans",sans-serif; text-decoration:none; cursor:pointer; }
+.rarity-hero-art { min-height:330px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; border:1px solid #393939; background:radial-gradient(ellipse at 60% 45%,#343434 0,#1a1a1a 45%,#111 78%); overflow:hidden; }
+.rarity-art-label { display:flex; justify-content:space-between; color:#aaa; font-size:.68rem; letter-spacing:.15em; }
+.rarity-art-word { align-self:center; color:#f4f4f4; font:700 clamp(4rem,10vw,8rem)/1 "Space Grotesk",sans-serif; letter-spacing:-.09em; text-shadow:7px 8px 0 #8f252b; }
+.rarity-art-word span { color:#e33b42; }
+.rarity-hero-art p { color:#e33b42; font-size:.72rem; font-weight:700; letter-spacing:.2em; }
+.rarity-toc { display:flex; flex-wrap:wrap; gap:12px 22px; padding:18px 0; border-top:1px solid #333; border-bottom:1px solid #333; }
+.rarity-toc span { color:#e33b42; font-size:.7rem; font-weight:700; letter-spacing:.13em; }
+.rarity-toc a { color:#ccc; text-decoration:none; font-size:.82rem; }
+.rarity-toc a:hover { color:#fff; }
+.rarity-section { padding:68px 0; border-bottom:1px solid #292929; scroll-margin-top:24px; }
+.rarity-page .eyebrow { color:#e33b42; font-size:.7rem; font-weight:700; letter-spacing:.17em; }
+.rarity-section h2,.rarity-quiz-section h2 { margin:12px 0 18px; font:700 clamp(2rem,4vw,3.3rem)/1.08 "Space Grotesk",sans-serif; letter-spacing:-.045em; }
+.rarity-highlight { margin:28px 0; padding:22px 24px; border:1px solid #4a292b; background:#1d1516; }
+.rarity-highlight strong { display:block; margin-bottom:8px; color:#ef6268; font:700 1.1rem "Space Grotesk",sans-serif; }
+.rarity-highlight p { margin:0; color:#c2c2c2; line-height:1.75; }
+.variant-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:30px; }
+.variant-card { min-height:190px; padding:22px; border:1px solid #343434; background:linear-gradient(145deg,#1c1c1c,#121212); }
+.variant-index { color:#e34a50; font:700 1rem "Space Grotesk",sans-serif; }
+.variant-card h3 { margin:18px 0 8px; font:600 1.25rem "Space Grotesk",sans-serif; }
+.variant-card p { color:#bcbcbc; line-height:1.65; font-size:.92rem; }
+.variant-card small { color:#e36a70; font-size:.65rem; font-weight:700; letter-spacing:.09em; }
+.rarity-footnote { color:#888; font-size:.8rem; line-height:1.6; margin-top:18px; }
+.th-compare { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:30px 0; }
+.th-card { padding:26px; border:1px solid #393939; background:#171717; }
+.sth-card { border-color:#8f383d; background:linear-gradient(145deg,#261819,#151313); }
+.th-label { color:#e34a50; font:700 3rem "Space Grotesk",sans-serif; letter-spacing:-.06em; }
+.th-card h3 { margin:0 0 12px; font:700 1.4rem "Space Grotesk",sans-serif; }
+.th-card p,.th-card li { color:#bdbdbd; line-height:1.7; }
+.th-card ul { padding-left:20px; margin-bottom:0; }
+.chase-panel { display:flex; align-items:center; gap:28px; margin:28px 0; padding:28px; background:#171717; border:1px solid #383838; }
+.chase-mark { color:#e34a50; font:700 clamp(2.4rem,6vw,4.5rem) "Space Grotesk",sans-serif; letter-spacing:-.07em; }
+.chase-panel h3 { margin:0 0 8px; font:600 1.25rem "Space Grotesk",sans-serif; }
+.chase-panel p { margin:0; color:#bdbdbd; line-height:1.7; }
+.value-factors { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:28px 0; }
+.value-factors div { display:flex; flex-direction:column; gap:8px; padding:20px; background:#171717; border:1px solid #343434; }
+.value-factors b { color:#f1f1f1; font:600 1.05rem "Space Grotesk",sans-serif; }
+.value-factors span { color:#aaa; font-size:.9rem; line-height:1.6; }
+.rarity-note { padding:18px 20px; border-left:3px solid #e33b42; background:#171717; color:#bdbdbd; line-height:1.75; }
+.rarity-checklist { display:grid; gap:0; margin:28px 0; border-top:1px solid #333; }
+.rarity-checklist label { display:flex; gap:12px; align-items:flex-start; padding:17px 10px; border-bottom:1px solid #333; color:#c7c7c7; line-height:1.55; cursor:pointer; }
+.rarity-checklist input { accent-color:#e33b42; margin-top:4px; }
+.rarity-quiz-section { padding:70px 0; scroll-margin-top:24px; }
+.rarity-quiz-section form { display:grid; gap:18px; }
+.rarity-quiz-section fieldset { margin:0; padding:20px; border:1px solid #393939; background:#171717; }
+.rarity-quiz-section legend { padding:0 8px; font-weight:700; }
+.rarity-quiz-section label { display:block; margin:12px 0; color:#c8c8c8; line-height:1.5; cursor:pointer; }
+.rarity-quiz-section input { accent-color:#e33b42; margin-right:8px; }
+.rarity-quiz-section .rarity-primary-link { justify-self:start; margin-top:0; }
+.rarity-quiz-result { color:#f2f2f2; font-weight:700; min-height:1.5em; }
+.rarity-next { display:flex; align-items:center; justify-content:space-between; gap:24px; margin:20px 0 70px; padding:28px; background:#191919; border:1px solid #363636; }
+.rarity-next h2 { margin:8px 0; font:700 1.8rem "Space Grotesk",sans-serif; }
+.rarity-next p:not(.eyebrow) { color:#aaa; margin:0; }
+.rarity-next a { color:#fff; text-decoration:none; font-weight:700; white-space:nowrap; }
+.rarity-page .site-footer { margin-top:0; }
+@media (max-width:760px) {
+  .rarity-hero { grid-template-columns:1fr; gap:28px; padding:52px 0 38px; }
+  .rarity-hero-art { min-height:230px; }
+  .variant-grid,.value-factors { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .th-compare { grid-template-columns:1fr; }
+  .rarity-next { align-items:flex-start; flex-direction:column; }
+}
+@media (max-width:480px) {
+  .rarity-main { width:min(100% - 28px,1180px); }
+  .variant-grid,.value-factors { grid-template-columns:1fr; }
+  .rarity-toc { gap:12px 16px; }
+  .chase-panel { align-items:flex-start; flex-direction:column; gap:12px; }
+}
